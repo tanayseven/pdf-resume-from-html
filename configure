@@ -2,12 +2,12 @@
 
 DISTRO=$(cat /etc/*-release | grep '^ID=' | sed s/ID=// | awk '{print tolower($0)}')
 
-echo "Distro is $DISTRO"
-
 if [[ "$DISTRO" == *"arch"* ]]; then
   echo "Detected Arch Linux"
+  pacman -S chromium
 fi
 
 if [[ "$DISTRO" == *"ubuntu"* ]]; then
   echo "Detected Ubuntu"
+  apt-get install chromium-browser
 fi
