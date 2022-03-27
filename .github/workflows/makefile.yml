@@ -25,7 +25,8 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: resume.pdf
-        asset_name: résumé
+        asset_name: résumé-tanay-prabhudesai.pdf
+        release_name: résumé
         tag: ${{ github.ref }}
         overwrite: true
         body: "The PDF version of the résumé"
