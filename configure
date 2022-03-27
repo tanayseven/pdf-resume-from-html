@@ -4,10 +4,10 @@ DISTRO=$(cat /etc/*-release | grep '^ID=' | sed s/ID=// | awk '{print tolower($0
 
 if [[ "$DISTRO" == *"arch"* ]]; then
   echo "Detected Arch Linux"
-  pacman -S chromium
+  pacman -S chromium inkscape
 fi
 
 if [[ "$DISTRO" == *"ubuntu"* ]]; then
   echo "Detected Ubuntu"
-  apt-get install chromium-browser
+  apt-get install chromium-browser inkscape
 fi
