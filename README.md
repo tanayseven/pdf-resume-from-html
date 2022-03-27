@@ -11,6 +11,7 @@ to be a wrong tool to choose for something like a résumé. So here I go. I'm us
 
 ## How to start developing?
 
+- To setup you need to run `sudo ./configure` (currently only Arch Linux and Ubuntu is supported)
 - How I develop is I run `make watch-build` which will start compiling PDF from HTML every 2 seconds.
-- I then open the generated PDF in the browser and keep on hitting whenever I want it updated
-- I change the HTML/CSS code in the repository and go back to the browser and hit refresh
+- Then the `index.html` can be opened in a browser is a live reload/hot reload mode, so you don't have to refresh
+- Don't forget to check the output of the PDF format to verify if it's matching the HTML
