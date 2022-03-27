@@ -9,5 +9,8 @@ fi
 
 if [[ "$DISTRO" == *"ubuntu"* ]]; then
   echo "Detected Ubuntu"
+  apt update
+  add-apt-repository ppa:inkscape.dev/stable
+  apt update
   apt-get install chromium-browser inkscape
 fi
