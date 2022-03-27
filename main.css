@@ -1,0 +1,54 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  @page { margin: 0; }
+}
+
+html, body {
+  height: 297mm;
+  width: 210mm;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 21cm;
+  height: 29.7cm;
+  font-size: 12pt;
+  font-family: "Times New Roman", serif;
+  /*margin: 30mm 45mm 30mm 45mm;*/
+  /* change the margins as you want them to be. */
+}
+
+#content {
+  max-width: 210mm;
+  max-height: 297mm;
+}
+
+#name-heading {
+  text-align: center;
+}
+
+#contact-and-links {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-icon {
+  top: 15pt;
+  width: 10pt;
+  height: 10pt;
+}
+
+.contact-link {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 10pt;
+}

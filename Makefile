@@ -2,14 +2,14 @@ ICONS_TO_CONVERT_LIST:=$(patsubst raw-icons/%.svg, icons/%.png, $(shell find raw
 
 .PHONY: build
 build: $(ICONS_TO_CONVERT_LIST)
-	weasyprint index.html resume.pdf
+	chromium --headless --disable-gpu --print-to-pdf=resume.pdf index.html
 
 ./icons/%.png: ./raw-icons/%.svg
 	inkscape $^ -o $@
 
 .PHONY: watch-build
 watch-build:
-	watch weasyprint index.html resume.pdf
+	watch chromium --headless --disable-gpu --print-to-pdf=resume.pdf index.html
 
 # TODO add a check to see if all necessary packages are installed
 #.PHONY:
