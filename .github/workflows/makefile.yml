@@ -25,14 +25,16 @@ jobs:
       continue-on-error: true
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        assets: résumé-tanay-prabhudesai.pdf
+        assets: resume-tanay-prabhudesai.pdf
+        tag: main
 
     - name: Upload résumé to download
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: resume.pdf
-        asset_name: résumé-tanay-prabhudesai.pdf
+        asset_name: resume-tanay-prabhudesai.pdf
         release_name: résumé
         overwrite: true
+        tag: ${{ github.ref }}
         body: "The PDF version of the résumé"
