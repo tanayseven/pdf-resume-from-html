@@ -19,17 +19,17 @@ body {
   height: 29.7cm;
   font-size: 12pt;
   font-family: "Times New Roman", serif;
-  /*margin: 30mm 45mm 30mm 45mm;*/
-  /* change the margins as you want them to be. */
 }
 
 #content {
   max-width: 210mm;
   max-height: 297mm;
+  margin: 5mm;
 }
 
 #name-heading {
   text-align: center;
+  margin: 0;
 }
 
 #contact-and-links {
@@ -40,8 +40,12 @@ body {
   align-items: center;
 }
 
+.faint-text {
+  color: lightgray;
+  font-size: 10pt;
+}
+
 .contact-icon {
-  top: 15pt;
   width: 10pt;
   height: 10pt;
 }
@@ -51,4 +55,26 @@ body {
   justify-content: center;
   display: inline-flex;
   font-size: 10pt;
+}
+
+#skill-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.section-heading {
+}
+
+.subsection-org-name {
+  display: inline-block;
+}
+
+.subsection-org-location {
+  display: inline-block;
+}
+
+.time-period {
+
 }
