@@ -20,6 +20,13 @@ jobs:
     - name: build
       run: make build
 
+    - name: Delete old release résumé
+      uses: mknejp/delete-release-assets@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref }}
+        assets: résumé-tanay-prabhudesai.pdf
+
     - name: Upload résumé to download
       uses: svenstaro/upload-release-action@v2
       with:
