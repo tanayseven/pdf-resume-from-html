@@ -64,9 +64,8 @@ body {
   list-style: none;
   display: grid;
   row-gap: 0;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0;
-  margin-top: 2mm;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2mm 0 0;
 }
 
 #skill-list li {
@@ -74,34 +73,30 @@ body {
 }
 
 .section-heading {
-  margin: 0;
-  margin-top: 2mm;
+  margin: 3mm 0 0;
 }
 
 .subsection {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  margin: 0;
-  margin-top: 2mm;
+  margin: 1mm 0 0;
 }
 
 .description {
   text-align: justify;
-  margin: 0;
-  margin-top: 1mm;
+  margin: 1mm 0 0;
 }
 
 .subsection-org-name {
   display: inline-flex;
-  margin: 0;
-  margin-top: 2mm;
+  margin: 2mm 0 0;
 }
 
 .subsection-org-location {
-  display: inline-flex;
-  margin: 0;
-  margin-top: 2mm;
+  display: flex;
+  justify-content: space-between;
+  margin: 2mm 0 0;
 }
 
 .time-period {
@@ -122,6 +117,10 @@ body {
 }
 
 .education-name {
+  margin: 0;
+}
+
+.work-subtitle {
   margin: 0;
 }
 
