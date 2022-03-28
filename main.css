@@ -67,14 +67,20 @@ body {
 .section-heading {
 }
 
+.subsection {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
 .subsection-org-name {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .subsection-org-location {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .time-period {
-
+  color: darkgray;
 }
