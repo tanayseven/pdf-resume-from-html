@@ -4,7 +4,9 @@
 }
 
 @media print {
-  @page { margin: 0; }
+  @page {
+    margin: 5mm 5mm 5mm 5mm;
+  }
 }
 
 html, body {
@@ -24,7 +26,6 @@ body {
 #content {
   max-width: 210mm;
   max-height: 297mm;
-  margin: 5mm;
 }
 
 #name-heading {
@@ -38,6 +39,7 @@ body {
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
 }
 
 .faint-text {
@@ -55,32 +57,60 @@ body {
   justify-content: center;
   display: inline-flex;
   font-size: 10pt;
+  margin: 0;
 }
 
 #skill-list {
   list-style: none;
   display: grid;
+  row-gap: 0;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  margin: 0;
+}
+
+#skill-list li {
+  padding: 0;
 }
 
 .section-heading {
+  margin: 0;
 }
 
 .subsection {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  margin: 0;
+}
+
+.description {
+  text-align: justify;
+  margin: 0;
 }
 
 .subsection-org-name {
   display: inline-flex;
+  margin: 0;
 }
 
 .subsection-org-location {
   display: inline-flex;
+  margin: 0;
 }
 
 .time-period {
-  color: darkgray;
+  color: #454545;
+}
+
+.education-name {
+  margin: 0;
+}
+
+
+.education-location {
+  margin: 0;
+}
+
+.points {
+  margin: 0;
 }
