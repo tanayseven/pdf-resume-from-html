@@ -32,7 +32,7 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: resume.pdf
+        file: resume-tanay-prabhudesai.pdf
         asset_name: resume-tanay-prabhudesai.pdf
         release_name: résumé
         overwrite: true
