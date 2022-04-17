@@ -75,6 +75,8 @@ body {
 
 .section-heading {
   margin: 3mm 0 0;
+  padding-left: 2mm;
+  background-color: darkgray;
 }
 
 .subsection {
